@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0, .6), rgba(49,168,221,.2), rgba(0,0,0,.6)), url('assets/images/banner.png');
+    
+}
