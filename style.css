@@ -1,8 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap'); 
+/* Importa fontes do Google Fonts */
+
 body {
-    background-color: black;
-}
+    background-color: black; /* Define a cor de fundo do body como preto */
+    color: rgb(255, 255, 255); /* Define a cor do texto como branco */
+    font-family: Raleway, sans-serif; /* Define a fonte do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: auto; /* Centraliza o body horizontalmente */
+    width: 1440px; /* Define a largura do body */
+    height: 605px; /* Define a altura do body */
+} 
 
 header {
-    background-image: linear-gradient(rgba(0,0,0, .6), rgba(49,168,221,.2), rgba(0,0,0,.6)), url('assets/images/banner.png');
-    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) -9%, rgba(49,168,221,.15), rgba(49,168,221,.15), rgba(0, 0, 0, 0.6) 109%), url('assets/images/banner.png'); 
+    /* Define uma imagem de fundo com um gradiente linear */
+    height: 604px; /* Define a altura do header */
+    border-bottom: 1px solid rgba(49,168,221); /* Define uma borda inferior */
+}
+
+.banner-content {
+    padding: 50px; /* Adiciona um espaçamento interno de 50 pixels */
+}
+
+.logo img {
+    padding-top: 25px; /* Adiciona um espaçamento superior de 25 pixels */
+}
+
+.logo {
+    width: 270px; /* Define a largura do fundo do logo */
+    height: 270px; /* Define a altura do fundo do logo */
+    background-color: rgba(0, 0, 0, 0.3); /* Define uma cor de fundo semitransparente */
+    border-radius: 50%; /* Faz um fundo em formato de um círculo */
+    margin: auto; /* Centraliza o logo horizontalmente */
+    filter: brightness(1.3) contrast(1.0); /* Ajusta o brilho e o contraste */
+}
+
+h1 {
+    font-size: 40px; /* Define o tamanho da fonte */
+    font-weight: 900; /* Define a espessura da fonte */
+    background: linear-gradient(#33a8db,#1472b7); /* Aplica um gradiente ao texto */
+    -webkit-background-clip: text; /* Aplica o gradiente apenas ao texto */
+    -webkit-text-fill-color: transparent; /* Faz o texto ser transparente para mostrar o gradiente */
+    margin-top: 40px; /* Adiciona uma margem superior de 40 pixels */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    margin: 19px; /* Define margens ao redor do h1 */
+}
+
+.banner-content p {
+    width: 513px; /* Define a largura do parágrafo */
+    font-size: 20px; /* Define o tamanho da fonte */
+    font-weight: 400; /* Define a espessura da fonte */
+    margin: auto; /* Centraliza o parágrafo horizontalmente */
+}
+
+button {
+    letter-spacing: 3px; /* Define o espaçamento entre as letras */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    background-color: #33a9db00; /* Define uma cor de fundo transparente */
+    width: 330px; /* Define a largura do botão */
+    height: 60px; /* Define a altura do botão */
+    color: #33a8db; /* Define a cor do texto */
+    font-size: 15px; /* Define o tamanho da fonte */
+    font-weight: 900; /* Define a espessura da fonte */
+    border: solid 2px #33a8db; /* Define uma borda sólida */
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+button a {
+    color: #33a8db; /* Define a cor do link dentro do botão */
+    text-decoration: none; /* Remove a sublinha do link */
+}
+
+#course-content {
+    margin-top: 110px; /* Adiciona uma margem superior de 110 pixels */
+    height: 423px; /* Define a altura do elemento */
+}
+
+h2 {
+    letter-spacing: 4px; /* Define o espaçamento entre as letras */
+    font-size: 30px; /* Define o tamanho da fonte */
+    font-weight: 700; /* Define a espessura da fonte */
+    color: #33a8db; /* Define a cor do texto */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+#course-content p {
+    font-size: 16px; /* Define o tamanho da fonte */
+    font-weight: 300; /* Define a espessura da fonte */
+    width: 800px; /* Define a largura do parágrafo */
+    margin: auto; /* Centraliza o parágrafo horizontalmente */
+}
+
+#course-content .modules-list {
+    width: 800px; /* Define a largura do container */
+    height: 425px; /* Define a altura do container */
+    margin-top: 20px; /* Adiciona uma margem superior de 20 pixels */
+    margin: auto; /* Centraliza o container horizontalmente */
+}
+
+#course-content .modules-list .module span {
+    color: #33a8db; /* Define a cor do texto dentro do span */
+}
+
+#course-content .modules-list .module {
+    border: #33a8db solid 1px; /* Define uma borda sólida */
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra interna */
+    background-color: rgb(36, 36, 36); /* Define a cor de fundo */
+    margin: 30px auto; /* Adiciona margens superior e inferior, centralizando horizontalmente */
+    border-radius: 30px; /* Define bordas arredondadas */
+    padding: 15px; /* Adiciona espaçamento interno */
+    width: 500px; /* Define a largura do módulo */
+}
+
+#transform-world p {
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 250px; /* Define a largura do parágrafo */
+    padding: 50px; /* Adiciona espaçamento interno de 50 pixels */
+    margin-left: 150px; /* Adiciona margem à esquerda */
+    text-transform: lowercase; /* Transforma o texto em minúsculas */
+    font-size: 40px; /* Define o tamanho da fonte */
+    font-weight: 900; /* Define a espessura da fonte */
+    text-shadow: #33a8db 3px 3px 3px; /* Adiciona uma sombra ao texto */
+}
+
+#transform-world {
+    height: 360px; /* Define a altura do elemento */
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir todo o elemento */
+    background-image: url('assets/images/woman-code.png'); /* Define a imagem de fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    border-bottom: 1px solid #33a8db; /* Define uma borda inferior */
+    border-top: 1px solid #33a8db; /* Define uma borda superior */
+}
+
+#professional-challenges h2 {
+    margin: auto; /* Centraliza o título horizontalmente */
+    margin-top: 80px; /* Adiciona uma margem superior de 80 pixels */
+    padding-bottom: 40px; /* Adiciona um espaçamento interno de 40 pixels na parte inferior do título */
+    width: 900px; /* Define a largura do título */
+}
+
+#professional-challenges p {
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+    font-weight: 300; /* Define a espessura da fonte como 300, que é um peso leve */
+    width: 800px; /* Define a largura do parágrafo como 800 pixels */
+    margin: auto; /* Centraliza o parágrafo horizontalmente */
+    padding-bottom: 80px; /* Adiciona um espaçamento interno de 80 pixels na parte inferior do parágrafo */
+    padding-top: 30px; /* Adiciona um espaçamento interno de 30 pixels na parte superior do parágrafo */
+}
+
+
+footer {
+    padding-top: 50px; /* Adiciona um espaçamento interno de 50 pixels no topo do rodapé */
+    padding-bottom: 60px; /* Adiciona um espaçamento interno de 60 pixels na parte inferior do rodapé */
+    height: 50px; /* Define a altura do rodapé como 50 pixels */
+    border-top: 1px solid #33a8db; /* Adiciona uma borda superior com 1 pixel de espessura e cor #33a8db */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(49,168,221,.2)); /* Aplica um gradiente de fundo, começando com uma cor preta semi-transparente e terminando com uma cor #33a8db semi-transparente */
+}
+
+footer a {
+    color: #33a8db; /* Define a cor do texto dos links dentro do rodapé como #33a8db */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: 600; /* Define a espessura da fonte dos links como 600 (negrito) */
 }
